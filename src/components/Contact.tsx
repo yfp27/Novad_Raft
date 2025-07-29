@@ -63,9 +63,9 @@ const Contact = () => {
 
               <div className="space-y-6">
                 <Card className="shadow-card">
-                  <CardContent className="p-6">
+                  <CardContent className="p-6 text-center">
                     <h3 className="text-xl font-semibold text-primary mb-6">Follow Me</h3>
-                    <div className="flex gap-4">
+                    <div className="flex gap-4 justify-center">
                       {socialLinks.map((social, index) => (
                         <a
                           key={index}
