@@ -6,50 +6,50 @@ import { ExternalLink, Github } from 'lucide-react';
 const Portfolio = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, product management, and secure payments.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      category: "Full Stack"
-    },
-    {
-      title: "Creative Agency Website",
-      description: "Modern, responsive website for a creative agency featuring smooth animations, portfolio showcase, and contact forms.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
-      technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
-      category: "Frontend"
-    },
-    {
-      title: "Task Management App",
-      description: "Collaborative task management application with real-time updates, team collaboration features, and intuitive drag-and-drop interface.",
+      title: "Brand Identity & Logo Design",
+      description: "Complete brand identity package including logo design, color palette, and brand guidelines for modern businesses.",
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71",
-      technologies: ["React", "Firebase", "Material-UI"],
-      category: "Full Stack"
+      technologies: ["Logo Design", "Branding", "Adobe Illustrator"],
+      category: "Graphics"
     },
     {
-      title: "Mobile Banking App UI",
-      description: "Clean and intuitive mobile banking interface design focused on user experience and accessibility.",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3",
-      technologies: ["Figma", "React Native", "UI/UX"],
-      category: "Design"
+      title: "Business Card Collection",
+      description: "Professional business card designs featuring clean layouts, typography, and brand consistency across various industries.",
+      image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07",
+      technologies: ["Print Design", "Typography", "Adobe InDesign"],
+      category: "Graphics"
     },
     {
-      title: "Restaurant Website",
-      description: "Elegant restaurant website with online menu, reservation system, and location information. Optimized for mobile devices.",
-      image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4",
-      technologies: ["Vue.js", "Nuxt.js", "SCSS"],
-      category: "Frontend"
+      title: "Custom T-Shirt Designs",
+      description: "Creative t-shirt designs for events, brands, and personal use featuring unique graphics and typography.",
+      image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+      technologies: ["T-Shirt Design", "Graphics", "Adobe Photoshop"],
+      category: "Graphics"
     },
     {
-      title: "Analytics Dashboard",
-      description: "Real-time analytics dashboard with interactive charts, data visualization, and customizable widgets for business insights.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
-      technologies: ["React", "D3.js", "Python", "FastAPI"],
-      category: "Full Stack"
+      title: "Shopify E-commerce Store",
+      description: "Complete Shopify store setup with custom design, product management, and payment integration for online businesses.",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d",
+      technologies: ["Shopify", "E-commerce", "Web Design"],
+      category: "Web"
+    },
+    {
+      title: "Social Media Graphics",
+      description: "Engaging social media graphics and posts designed to increase engagement and maintain brand consistency across platforms.",
+      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113",
+      technologies: ["Social Media", "Graphics Design", "Canva"],
+      category: "Graphics"
+    },
+    {
+      title: "Video Content Creation",
+      description: "Professional video editing for social media, including transitions, effects, color grading, and motion graphics.",
+      image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d",
+      technologies: ["Video Editing", "Motion Graphics", "After Effects"],
+      category: "Video"
     }
   ];
 
-  const categories = ["All", "Full Stack", "Frontend", "Design"];
+  const categories = ["All", "Graphics", "Web", "Video"];
 
   return (
     <section id="portfolio" className="py-20 bg-section-bg">

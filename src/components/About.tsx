@@ -27,8 +27,12 @@ const About = () => {
   ];
 
   const technologies = [
-    "React", "TypeScript", "Node.js", "Python", "Figma", "Adobe Creative Suite",
-    "Tailwind CSS", "PostgreSQL", "AWS", "Docker", "Git", "Agile"
+    "Graphics Design", "Logo Design", "Business card Design", "T-Shirt Design", 
+    "Brochure Design", "Product Design", "Banner Design", "Social Media Graphics",
+    "UI/UX Design", "Infographics", "Photo Editing", "Presentation Design", "Flyer Design",
+    "HTML & CSS", "Responsive Design", "SEO", "CMS", "Design with Builder",
+    "Bug Research", "Video Editing", "Color Correction", "Motion Graphics",
+    "Web Hosting", "Digital Marketing & SEO", "Website Hosting & Domain Integration"
   ];
 
   return (
@@ -47,19 +51,17 @@ const About = () => {
             {/* About Content */}
             <div className="animate-slide-up">
               <h3 className="text-2xl font-semibold text-primary mb-6">
-                Building Digital Dreams Into Reality
+                I'm a Web & Graphic Design Professional with a flair for bug fixing and artistic video editing.
               </h3>
               
               <p className="text-lg text-foreground mb-6 leading-relaxed">
-                I'm a creative freelancer who specializes in turning complex ideas into elegant, 
-                user-friendly digital experiences. With a background in both design and development, 
-                I bridge the gap between aesthetics and functionality.
+                I design beautiful graphics and websites that grab attention and speak your brand voice. 
+                I debug, UI optimize, and ensure your site runs smoothly, securely, and trouble-free. 
+                From branding to domain + hosting setup, I handle the technical issues so you're launch-ready.
               </p>
               
               <p className="text-lg text-foreground mb-8 leading-relaxed">
-                Every project is an opportunity to solve unique challenges and create something 
-                meaningful. I believe in the power of good design and clean code to transform 
-                businesses and delight users.
+                I also design engaging, platform-ready videos that keep your audience interested.
               </p>
 
               {/* Technologies */}
