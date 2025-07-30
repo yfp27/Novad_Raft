@@ -9,9 +9,9 @@ const Testimonials = () => {
     {
       id: 1,
       quote: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
-      name: "Eric Ingram",
-      position: "Product Designer @facebook",
-      avatar: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952"
+       name: "Erica Miller",
+       position: "Product Designer @Twitter",
+       avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b524"
     },
     {
       id: 2,
@@ -50,8 +50,17 @@ const Testimonials = () => {
           {/* Section Header */}
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-8">My Happy Clients</h2>
-            <div className="flex justify-center mb-8">
-              <div className="w-16 h-1 bg-gradient-to-r from-transparent via-primary to-transparent"></div>
+            {/* Wavy line decoration */}
+            <div className="flex justify-center mb-12">
+              <svg width="60" height="8" viewBox="0 0 60 8" className="text-white">
+                <path
+                  d="M2 6c4-4 8-4 12 0s8 4 12 0 8-4 12 0 8 4 12 0 8-4 12 0"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  fill="none"
+                  strokeLinecap="round"
+                />
+              </svg>
             </div>
           </div>
 
