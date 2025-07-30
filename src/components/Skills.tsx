@@ -1,48 +1,21 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Progress } from '@/components/ui/progress';
-import { Monitor, Smartphone, Server, Paintbrush } from 'lucide-react';
+import { Palette, Globe, Video } from 'lucide-react';
 
 const Skills = () => {
-  const skillCategories = [
+  const services = [
     {
-      icon: <Monitor className="h-8 w-8 text-accent" />,
-      title: "Frontend Development",
-      skills: [
-        { name: "React/Next.js", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "Tailwind CSS", level: 95 },
-        { name: "Vue.js", level: 80 }
-      ]
+      icon: <Palette className="h-12 w-12 text-accent" />,
+      title: "Graphic Design",
+      description: "Creative visual solutions for your brand identity and marketing needs."
     },
     {
-      icon: <Server className="h-8 w-8 text-accent" />,
-      title: "Backend Development",
-      skills: [
-        { name: "Node.js", level: 85 },
-        { name: "Python/Django", level: 80 },
-        { name: "PostgreSQL", level: 85 },
-        { name: "API Design", level: 90 }
-      ]
+      icon: <Globe className="h-12 w-12 text-accent" />,
+      title: "Web Design & Development",
+      description: "Modern, responsive websites built with the latest technologies."
     },
     {
-      icon: <Paintbrush className="h-8 w-8 text-accent" />,
-      title: "Design & UX",
-      skills: [
-        { name: "UI/UX Design", level: 90 },
-        { name: "Figma", level: 95 },
-        { name: "Adobe Creative Suite", level: 85 },
-        { name: "Prototyping", level: 88 }
-      ]
-    },
-    {
-      icon: <Smartphone className="h-8 w-8 text-accent" />,
-      title: "Mobile & DevOps",
-      skills: [
-        { name: "React Native", level: 75 },
-        { name: "AWS/Cloud", level: 80 },
-        { name: "Docker", level: 75 },
-        { name: "CI/CD", level: 78 }
-      ]
+      icon: <Video className="h-12 w-12 text-accent" />,
+      title: "Video Editing",
+      description: "Professional video content for social media and marketing campaigns."
     }
   ];
 
@@ -58,48 +31,23 @@ const Skills = () => {
             </p>
           </div>
 
-          {/* Skills Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-            {skillCategories.map((category, index) => (
-              <Card key={index} className="shadow-card hover:shadow-elegant transition-all duration-300 animate-slide-up">
-                <CardHeader className="pb-4">
-                  <div className="flex items-center gap-3">
-                    {category.icon}
-                    <CardTitle className="text-xl text-primary">{category.title}</CardTitle>
+          {/* Services Grid */}
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            {services.map((service, index) => (
+              <div key={index} className="group p-8 rounded-2xl bg-card border border-border hover:border-accent/50 transition-all duration-300 animate-slide-up text-center">
+                <div className="mb-6 flex justify-center">
+                  <div className="p-4 rounded-xl bg-accent/10 group-hover:bg-accent/20 transition-colors duration-300">
+                    {service.icon}
                   </div>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  {category.skills.map((skill, skillIndex) => (
-                    <div key={skillIndex} className="space-y-2">
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm font-medium text-foreground">{skill.name}</span>
-                        <span className="text-sm text-muted-foreground">{skill.level}%</span>
-                      </div>
-                      <Progress 
-                        value={skill.level} 
-                        className="h-2"
-                      />
-                    </div>
-                  ))}
-                </CardContent>
-              </Card>
+                </div>
+                <h3 className="text-xl font-bold text-foreground mb-4 group-hover:text-accent transition-colors duration-300">
+                  {service.title}
+                </h3>
+                <p className="text-muted-foreground group-hover:text-foreground transition-colors duration-300">
+                  {service.description}
+                </p>
+              </div>
             ))}
-          </div>
-
-          {/* Call to Action */}
-          <div className="text-center mt-16 animate-slide-up">
-            <div className="bg-gradient-primary rounded-2xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">Ready to Work Together?</h3>
-              <p className="text-lg opacity-90 mb-6">
-                Let's discuss how these skills can bring your project to life
-              </p>
-              <a 
-                href="#contact" 
-                className="inline-flex items-center px-6 py-3 bg-white text-primary rounded-lg font-semibold hover:bg-white/90 transition-colors duration-300"
-              >
-                Get In Touch
-              </a>
-            </div>
           </div>
         </div>
       </div>
