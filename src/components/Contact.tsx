@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Mail, Phone, MapPin, Linkedin, Github, Twitter } from 'lucide-react';
+import { Mail, MessageCircle, MapPin, Linkedin, Github, Twitter } from 'lucide-react';
 
 const Contact = () => {
 
@@ -12,10 +12,10 @@ const Contact = () => {
       href: "mailto:jesterbyte337@gmail.com"
     },
     {
-      icon: <Phone className="h-5 w-5 text-accent" />,
-      label: "Phone",
-      value: "+8801945467764",
-      href: "tel:+8801945467764"
+      icon: <MessageCircle className="h-5 w-5 text-accent" />,
+      label: "WhatsApp",
+      value: "+8801992214010",
+      href: "https://wa.me/8801992214010"
     }
   ];
 
