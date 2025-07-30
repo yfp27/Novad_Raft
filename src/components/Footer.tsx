@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <p className="text-sm opacity-90">
-              © 2024 Creative Freelancer. All rights reserved.
+              © 2025 Novad Raft.
             </p>
           </div>
           

@@ -32,9 +32,6 @@ const Contact = () => {
           {/* Section Header */}
           <div className="text-center mb-16 animate-slide-up">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Let's Work Together</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Ready to start your next project? Let's discuss how we can bring your ideas to life.
-            </p>
           </div>
 
           <div className="max-w-4xl mx-auto">
@@ -86,9 +83,6 @@ const Contact = () => {
                     <p className="text-white/90 mb-4">
                       I'm currently accepting new freelance projects and would love to hear about yours.
                     </p>
-                    <Button variant="secondary" className="bg-white text-primary hover:bg-white/90">
-                      Schedule a Call
-                    </Button>
                   </CardContent>
                 </Card>
               </div>

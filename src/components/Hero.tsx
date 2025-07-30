@@ -30,24 +30,6 @@ const Hero = () => {
               Turning ideas into exceptional digital experiences through innovative design and development
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button 
-                size="lg" 
-                className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-glow transform hover:scale-105 transition-all duration-300"
-              >
-                View My Work
-                <ArrowDown className="ml-2 h-5 w-5" />
-              </Button>
-              
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm"
-              >
-                Download CV
-                <Download className="ml-2 h-5 w-5" />
-              </Button>
-            </div>
           </div>
         </div>
       </div>

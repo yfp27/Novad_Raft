@@ -66,7 +66,7 @@ const About = () => {
 
               {/* Technologies */}
               <div>
-                <h4 className="text-lg font-semibold text-primary mb-4">Technologies I Work With</h4>
+                <h4 className="text-lg font-semibold text-primary mb-4">Skills I Work With</h4>
                 <div className="flex flex-wrap gap-2">
                   {technologies.map((tech) => (
                     <Badge key={tech} variant="secondary" className="text-sm">
