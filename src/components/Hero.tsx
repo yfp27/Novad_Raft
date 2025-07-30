@@ -1,7 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Download } from 'lucide-react';
 import heroImage from '@/assets/hero-workspace.jpg';
-import profilePicture from '@/assets/profile-picture.jpg';
 
 const Hero = () => {
   return (
@@ -22,15 +21,6 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center text-white">
           <div className="animate-fade-in">
-            {/* Profile Picture */}
-            <div className="mb-8 flex justify-center">
-              <img 
-                src={profilePicture} 
-                alt="Novad - Profile Picture" 
-                className="w-32 h-32 rounded-full border-4 border-accent shadow-glow object-cover"
-              />
-            </div>
-            
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               Hi there!
               <span className="block text-accent">I'm Novad</span>
