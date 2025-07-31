@@ -95,6 +95,48 @@ const Portfolio = () => {
       title: "Backpack Collection",
       category: "Product Design",
       size: "medium"
+    },
+    {
+      id: 14,
+      image: "/lovable-uploads/30f5c14b-d127-4f0a-b8db-8fe3cdb2280f.png",
+      title: "Drop & Drop Mockup",
+      category: "Branding",
+      size: "medium"
+    },
+    {
+      id: 15,
+      image: "/lovable-uploads/64f48661-79c3-4690-bdf6-715284d35c6c.png",
+      title: "JR Circular Logo",
+      category: "Branding",
+      size: "medium"
+    },
+    {
+      id: 16,
+      image: "/lovable-uploads/6ce9f8d6-8718-4256-ae5c-fa5d1c7a4349.png",
+      title: "Decorative Pattern",
+      category: "Design",
+      size: "medium"
+    },
+    {
+      id: 17,
+      image: "/lovable-uploads/51ccdb98-0cff-4ced-9989-992d6820ea19.png",
+      title: "Iron Bull Premium",
+      category: "Branding",
+      size: "large"
+    },
+    {
+      id: 18,
+      image: "/lovable-uploads/427ef0f3-91e9-4651-b192-6932ccb42898.png",
+      title: "Authentic Denim",
+      category: "Branding",
+      size: "medium"
+    },
+    {
+      id: 19,
+      image: "/lovable-uploads/39fb8020-dc4d-4241-a23c-13ab043294e2.png",
+      title: "RICKO Wooden Letters",
+      category: "Branding",
+      size: "medium"
     }
   ];
 
@@ -151,7 +193,7 @@ const Portfolio = () => {
               <Button 
                 onClick={() => setShowAll(true)}
                 variant="outline"
-                className="px-8 py-3 text-white border-white hover:bg-white hover:text-black transition-all duration-300"
+                className="px-8 py-3 text-black bg-white border-white hover:bg-red-500 hover:text-white hover:border-red-500 transition-all duration-300"
               >
                 View More
               </Button>
@@ -164,7 +206,7 @@ const Portfolio = () => {
               <Button 
                 onClick={() => setShowAll(false)}
                 variant="outline"
-                className="px-8 py-3 text-white border-white hover:bg-white hover:text-black transition-all duration-300"
+                className="px-8 py-3 text-black bg-white border-white hover:bg-red-500 hover:text-white hover:border-red-500 transition-all duration-300"
               >
                 View Less
               </Button>
