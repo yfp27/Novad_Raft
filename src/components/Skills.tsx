@@ -32,18 +32,18 @@ const Skills = () => {
           </div>
 
           {/* Services Grid */}
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
             {services.map((service, index) => (
-              <div key={index} className="group p-8 rounded-2xl bg-card border border-border hover:border-accent/50 transition-all duration-300 animate-slide-up text-center">
-                <div className="mb-6 flex justify-center">
-                  <div className="p-4 rounded-xl bg-accent/10 group-hover:bg-accent/20 transition-colors duration-300">
+              <div key={index} className="group p-6 lg:p-8 rounded-2xl bg-card border border-border hover:border-accent/50 transition-all duration-300 animate-slide-up text-center hover:shadow-lg">
+                <div className="mb-4 lg:mb-6 flex justify-center">
+                  <div className="p-3 lg:p-4 rounded-xl bg-accent/10 group-hover:bg-accent/20 transition-colors duration-300">
                     {service.icon}
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-4 group-hover:text-accent transition-colors duration-300">
+                <h3 className="text-lg lg:text-xl font-bold text-foreground mb-3 lg:mb-4 group-hover:text-accent transition-colors duration-300">
                   {service.title}
                 </h3>
-                <p className="text-muted-foreground group-hover:text-foreground transition-colors duration-300">
+                <p className="text-sm lg:text-base text-muted-foreground group-hover:text-foreground transition-colors duration-300 leading-relaxed">
                   {service.description}
                 </p>
               </div>

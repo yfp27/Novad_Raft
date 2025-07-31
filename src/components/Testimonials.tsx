@@ -65,30 +65,30 @@ const Testimonials = () => {
           </div>
 
           {/* Testimonial Content */}
-          <div className="relative">
+          <div className="relative max-w-5xl mx-auto px-4 lg:px-12">
             <div className="text-center animate-fade-in">
               {/* Quote Icon */}
-              <div className="text-6xl md:text-8xl text-primary/20 mb-8 font-serif">"</div>
+              <div className="text-5xl md:text-6xl lg:text-8xl text-primary/20 mb-6 lg:mb-8 font-serif">"</div>
               
               {/* Quote Text */}
-              <blockquote className="text-lg md:text-xl leading-relaxed mb-12 max-w-4xl mx-auto text-gray-300 animate-slide-up">
+              <blockquote className="text-base md:text-lg lg:text-xl leading-relaxed mb-8 lg:mb-12 max-w-4xl mx-auto text-gray-300 animate-slide-up px-4">
                 {testimonials[currentIndex].quote}
               </blockquote>
 
               {/* Red Line */}
-              <div className="w-full h-1 bg-gradient-to-r from-transparent via-red-500 to-transparent mb-8"></div>
+              <div className="w-24 md:w-32 lg:w-full h-1 bg-gradient-to-r from-transparent via-red-500 to-transparent mb-6 lg:mb-8 mx-auto"></div>
 
               {/* Client Info */}
               <div className="flex flex-col items-center animate-slide-up">
-                <div className="w-20 h-20 rounded-full overflow-hidden mb-4 ring-4 ring-primary/20">
+                <div className="w-16 h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 rounded-full overflow-hidden mb-3 lg:mb-4 ring-4 ring-primary/20">
                   <img
                     src={testimonials[currentIndex].avatar}
                     alt={testimonials[currentIndex].name}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{testimonials[currentIndex].name}</h3>
-                <p className="text-gray-400">{testimonials[currentIndex].position}</p>
+                <h3 className="text-lg md:text-xl font-semibold mb-1 lg:mb-2">{testimonials[currentIndex].name}</h3>
+                <p className="text-sm md:text-base text-gray-400">{testimonials[currentIndex].position}</p>
               </div>
             </div>
 
@@ -96,19 +96,19 @@ const Testimonials = () => {
             <Button
               variant="ghost"
               size="icon"
-              className="absolute left-0 top-1/2 -translate-y-1/2 text-white hover:text-primary transition-colors"
+              className="absolute left-0 md:left-4 top-1/2 -translate-y-1/2 text-white hover:text-primary transition-colors hidden md:flex"
               onClick={prevTestimonial}
             >
-              <ChevronLeft className="h-8 w-8" />
+              <ChevronLeft className="h-6 w-6 lg:h-8 lg:w-8" />
             </Button>
 
             <Button
               variant="ghost"
               size="icon"
-              className="absolute right-0 top-1/2 -translate-y-1/2 text-white hover:text-primary transition-colors"
+              className="absolute right-0 md:right-4 top-1/2 -translate-y-1/2 text-white hover:text-primary transition-colors hidden md:flex"
               onClick={nextTestimonial}
             >
-              <ChevronRight className="h-8 w-8" />
+              <ChevronRight className="h-6 w-6 lg:h-8 lg:w-8" />
             </Button>
           </div>
 
