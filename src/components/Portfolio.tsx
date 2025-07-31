@@ -53,6 +53,48 @@ const Portfolio = () => {
       title: "Silver Kitchen Restaurant",
       category: "Branding",
       size: "medium"
+    },
+    {
+      id: 8,
+      image: "/lovable-uploads/339b17eb-4a5e-4a89-b106-a065e5533bb5.png",
+      title: "Headphone New Collection",
+      category: "Product Design",
+      size: "medium"
+    },
+    {
+      id: 9,
+      image: "/lovable-uploads/301edaef-7fab-46b8-853d-d110df12f214.png",
+      title: "New Product Launch",
+      category: "Product Design",
+      size: "medium"
+    },
+    {
+      id: 10,
+      image: "/lovable-uploads/0c2e933d-3b03-4d48-9651-95ba11df7cd6.png",
+      title: "Best Furniture",
+      category: "Product Design",
+      size: "large"
+    },
+    {
+      id: 11,
+      image: "/lovable-uploads/8c87d4b9-8759-4378-9c97-264b0fb9a38b.png",
+      title: "Smart Watch Collection",
+      category: "Product Design",
+      size: "medium"
+    },
+    {
+      id: 12,
+      image: "/lovable-uploads/30bceef0-5978-409d-aba6-6adaec2c225c.png",
+      title: "Doff Earbuds",
+      category: "Product Design",
+      size: "medium"
+    },
+    {
+      id: 13,
+      image: "/lovable-uploads/283d618a-3f70-4f86-8876-64fb762dd27a.png",
+      title: "Backpack Collection",
+      category: "Product Design",
+      size: "medium"
     }
   ];
 
