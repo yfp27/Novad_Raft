@@ -137,6 +137,76 @@ const Portfolio = () => {
       title: "RICKO Wooden Letters",
       category: "Branding",
       size: "medium"
+    },
+    {
+      id: 20,
+      image: "/lovable-uploads/2f08f0e4-967d-4dfd-8e38-22fd364ac33a.png",
+      title: "Tiger ERP Website",
+      category: "Web Design",
+      size: "large"
+    },
+    {
+      id: 21,
+      image: "/lovable-uploads/af961d06-4889-40f1-986c-846d2facd2a9.png",
+      title: "Software Arena Limited",
+      category: "Web Design",
+      size: "medium"
+    },
+    {
+      id: 22,
+      image: "/lovable-uploads/8d7814e9-e7a1-41e8-a676-e614e3460d70.png",
+      title: "CZOR Anna Collection",
+      category: "Web Design",
+      size: "medium"
+    },
+    {
+      id: 23,
+      image: "/lovable-uploads/17e54dd7-1219-4580-97a7-2ab2e740ce0a.png",
+      title: "Sinp Minimal Watch",
+      category: "Web Design",
+      size: "large"
+    },
+    {
+      id: 24,
+      image: "/lovable-uploads/917107fe-ccd3-433d-b70e-651a14a09eef.png",
+      title: "Patio & Pizza",
+      category: "Web Design",
+      size: "medium"
+    },
+    {
+      id: 25,
+      image: "/lovable-uploads/bb86facf-395a-4d17-a48c-eb7a56351225.png",
+      title: "Narrow Offers Shop",
+      category: "Web Design",
+      size: "medium"
+    },
+    {
+      id: 26,
+      image: "/lovable-uploads/9d31d203-c107-4c38-b8f3-276d281fedf1.png",
+      title: "Review Tapper",
+      category: "Web Design",
+      size: "medium"
+    },
+    {
+      id: 27,
+      image: "/lovable-uploads/ac0bfb70-c43f-47c0-a70f-553e718055eb.png",
+      title: "Dental Clinic",
+      category: "Web Design",
+      size: "medium"
+    },
+    {
+      id: 28,
+      image: "/lovable-uploads/699bf3e5-a0e4-4f3e-adde-0d06f7297139.png",
+      title: "Guns Online",
+      category: "Web Design",
+      size: "large"
+    },
+    {
+      id: 29,
+      image: "/lovable-uploads/419b6dbb-deed-4357-84dd-f1eef8da857c.png",
+      title: "Boll & Branch",
+      category: "Web Design",
+      size: "medium"
     }
   ];
 
