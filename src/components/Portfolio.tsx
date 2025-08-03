@@ -298,6 +298,55 @@ const Portfolio = () => {
       title: "FWM Web Market",
       category: "Branding",
       size: "medium"
+    },
+    {
+      id: 43,
+      image: "/lovable-uploads/cab352ca-86e5-4787-8157-d679da94f3a1.png",
+      title: "Meme Time Boys T-Shirt",
+      category: "Apparel Design",
+      size: "medium"
+    },
+    {
+      id: 44,
+      image: "/lovable-uploads/4ebeb52a-f2f5-4a0c-bead-9f8b945265cc.png",
+      title: "Wolf Moon T-Shirt",
+      category: "Apparel Design",
+      size: "medium"
+    },
+    {
+      id: 45,
+      image: "/lovable-uploads/1ea518b0-18dc-442c-a3e3-afacc440b967.png",
+      title: "Italia Football T-Shirt",
+      category: "Apparel Design",
+      size: "medium"
+    },
+    {
+      id: 46,
+      image: "/lovable-uploads/4cff4a77-5884-409e-a098-27c89f9b94c4.png",
+      title: "Life Is So Good T-Shirt",
+      category: "Apparel Design",
+      size: "medium"
+    },
+    {
+      id: 47,
+      image: "/lovable-uploads/25d62deb-e6ad-4e0f-8024-a8c56a70eeed.png",
+      title: "Los Angeles California T-Shirt",
+      category: "Apparel Design",
+      size: "medium"
+    },
+    {
+      id: 48,
+      image: "/lovable-uploads/6291ef9d-9f73-43fd-9a7c-9324bb51ed50.png",
+      title: "Rocky T-Shirt",
+      category: "Apparel Design",
+      size: "medium"
+    },
+    {
+      id: 49,
+      image: "/lovable-uploads/1c316b25-4891-4613-ac59-681a561487f8.png",
+      title: "Simplicity Minimalist T-Shirt",
+      category: "Apparel Design",
+      size: "medium"
     }
   ];
 
