@@ -235,6 +235,69 @@ const Portfolio = () => {
       title: "Tiger ERP - Bus Management",
       category: "Branding",
       size: "medium"
+    },
+    {
+      id: 34,
+      image: "/lovable-uploads/6661ca95-5095-49ed-a25f-8a000c186cbb.png",
+      title: "Coffee Factory Logo",
+      category: "Branding",
+      size: "medium"
+    },
+    {
+      id: 35,
+      image: "/lovable-uploads/9cb07936-eb5f-4eb8-8fe3-e58a3fa18737.png",
+      title: "LEKU Coffee Brand",
+      category: "Branding",
+      size: "medium"
+    },
+    {
+      id: 36,
+      image: "/lovable-uploads/3429cf2e-f42f-49e6-8390-3179c1ccead1.png",
+      title: "The Plaza Restaurant",
+      category: "Branding",
+      size: "medium"
+    },
+    {
+      id: 37,
+      image: "/lovable-uploads/d30417d4-7251-4b82-9a54-6c3d9c2e71c1.png",
+      title: "Godterest Brand",
+      category: "Branding",
+      size: "medium"
+    },
+    {
+      id: 38,
+      image: "/lovable-uploads/482cd90e-9875-429d-988f-bca5db64137a.png",
+      title: "HouseCall MD Medical Care",
+      category: "Branding",
+      size: "large"
+    },
+    {
+      id: 39,
+      image: "/lovable-uploads/82ea25c2-0ce4-4348-ac39-156a2045aeab.png",
+      title: "TRIM Education",
+      category: "Branding",
+      size: "medium"
+    },
+    {
+      id: 40,
+      image: "/lovable-uploads/92f4d730-7b9d-4820-ba92-3464a31db3a5.png",
+      title: "Wildly Western & Co",
+      category: "Branding",
+      size: "medium"
+    },
+    {
+      id: 41,
+      image: "/lovable-uploads/f0f7da15-6361-42ee-90c6-abb0775ecf6d.png",
+      title: "Tiger ERP Business Solution",
+      category: "Branding",
+      size: "large"
+    },
+    {
+      id: 42,
+      image: "/lovable-uploads/6733490c-c85d-493a-9024-167c0e762699.png",
+      title: "FWM Web Market",
+      category: "Branding",
+      size: "medium"
     }
   ];
 
