@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import ericaMillar from '@/assets/erica-millar.jpg';
+import sarahJohnson from '@/assets/sarah-johnson.jpg';
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -9,16 +11,16 @@ const Testimonials = () => {
     {
       id: 1,
       quote: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
-       name: "Erica Miller",
+       name: "Erica Millar",
        position: "Product Designer @Twitter",
-       avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b524"
+       avatar: ericaMillar
     },
     {
       id: 2,
       quote: "The quick brown fox jumps over the lazy dog. This pangram contains every letter of the alphabet and is perfect for testing typography and layout designs across various platforms and applications.",
       name: "Sarah Johnson",
       position: "UI/UX Designer @google",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b524"
+      avatar: sarahJohnson
     },
     {
       id: 3,
