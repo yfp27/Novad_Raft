@@ -207,6 +207,34 @@ const Portfolio = () => {
       title: "Boll & Branch",
       category: "Web Design",
       size: "medium"
+    },
+    {
+      id: 30,
+      image: "/lovable-uploads/e7731f53-8e22-44ca-a4e6-3c5660fbc559.png",
+      title: "Software Arena - PVC Industries",
+      category: "Branding",
+      size: "medium"
+    },
+    {
+      id: 31,
+      image: "/lovable-uploads/fcc20466-7329-40d5-9432-ad99bf5c4a0d.png",
+      title: "Software Arena - FMCG Industries",
+      category: "Branding",
+      size: "medium"
+    },
+    {
+      id: 32,
+      image: "/lovable-uploads/ee60f0c1-ea89-4d5e-87b0-f5ed11cdb458.png",
+      title: "Tiger ERP - Steel Company",
+      category: "Branding",
+      size: "large"
+    },
+    {
+      id: 33,
+      image: "/lovable-uploads/5d04188e-14f5-4e0e-99fa-b58635c41640.png",
+      title: "Tiger ERP - Bus Management",
+      category: "Branding",
+      size: "medium"
     }
   ];
 
