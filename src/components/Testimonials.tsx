@@ -1,8 +1,14 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import ericaMillar from '@/assets/erica-millar.jpg';
-import sarahJohnson from '@/assets/sarah-johnson.jpg';
+import lucasByrne from '@/assets/lucas-byrne.jpg';
+import nishantVerma from '@/assets/nishant-verma.jpg';
+import poojaRay from '@/assets/pooja-ray.jpg';
+import graceTanaka from '@/assets/grace-tanaka.jpg';
+import roanKeller from '@/assets/roan-keller.jpg';
+import paulDonovan from '@/assets/paul-donovan.jpg';
+import syedRahman from '@/assets/syed-rahman.jpg';
+import mateoCruz from '@/assets/mateo-cruz.jpg';
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -10,24 +16,51 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      quote: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
-       name: "Erica Millar",
-       position: "Product Designer @Twitter",
-       avatar: ericaMillar
+      quote: "Novad nailed our brand identity with incredible precision and imagination. The logo is forever and in-your-head iconic, and the banners brought just the right pizzazz to our launch. A genuine talented and reliable creative partner we believe in",
+      name: "Lucas Byrne",
+      avatar: lucasByrne
     },
     {
       id: 2,
-      quote: "The quick brown fox jumps over the lazy dog. This pangram contains every letter of the alphabet and is perfect for testing typography and layout designs across various platforms and applications.",
-      name: "Sarah Johnson",
-      position: "UI/UX Designer @google",
-      avatar: sarahJohnson
+      quote: "Working with Jester was so seamless from start to finish. He created a clean, user-friendly site and developed a logo that perfectly delivered our message. He's savvy, trendy, and always a professional in every sense.",
+      name: "Nishant Verma",
+      avatar: nishantVerma
     },
     {
       id: 3,
-      quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      name: "Michael Chen",
-      position: "Creative Director @adobe",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
+      quote: "I was completely bogged down with constant website issues and frustrating design gaps. Jester not only remedied all the technical issues in a timely fashion but also modernized our appearance in a consistently cohesive way. He's my guy from now on.",
+      name: "Pooja Ray",
+      avatar: poojaRay
+    },
+    {
+      id: 4,
+      quote: "Jester brought my entire campaign to life with deep, textured language that jumped out at first sight. Every social media post was clean, bold, and unique. Statistics confirm the crowd definitely noticed and engaged more than ever before.",
+      name: "Grace Tanaka",
+      avatar: graceTanaka
+    },
+    {
+      id: 5,
+      quote: "I required graphics that really stood out but had a retro feel, and Jester got the task perfectly. His creative manipulation added real personality and soul to the whole product range, far exceeding my expectations.",
+      name: "Roan Keller",
+      avatar: roanKeller
+    },
+    {
+      id: 6,
+      quote: "Our shop needed more flavor and personality—and Jester delivered. His smart layout and clean typography gave our site an inviting edge, boosting sales within weeks.",
+      name: "Paul Donovan",
+      avatar: paulDonovan
+    },
+    {
+      id: 7,
+      quote: "Working with APIs is usually a nightmare, but Jester made it a piece of cake to work with ours and integrate our Google review widget and design modifications. He's pleasant to work with, quick to respond, and an excellent team player.",
+      name: "Syed Rahman",
+      avatar: syedRahman
+    },
+    {
+      id: 8,
+      quote: "I needed a clean user experience and sophisticated branding for my coaching website, and Jester performed impeccably. He wedded great storytelling with performance-oriented design. Clients frequently compliment how professional and engaging the site looks and feels.",
+      name: "Mateo Cruz",
+      avatar: mateoCruz
     }
   ];
 
@@ -90,7 +123,6 @@ const Testimonials = () => {
                   />
                 </div>
                 <h3 className="text-lg md:text-xl font-semibold mb-1 lg:mb-2">{testimonials[currentIndex].name}</h3>
-                <p className="text-sm md:text-base text-gray-400">{testimonials[currentIndex].position}</p>
               </div>
             </div>
 
