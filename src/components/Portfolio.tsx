@@ -354,73 +354,165 @@ const Portfolio = () => {
 
   return (
     <section id="portfolio" className="py-20 bg-gradient-to-br from-black via-gray-900 to-black text-white relative overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-20 left-10 w-40 h-40 bg-gradient-to-r from-red-500 to-purple-500 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-32 h-32 bg-gradient-to-r from-blue-500 to-green-500 rounded-full blur-2xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/3 w-48 h-48 bg-gradient-to-r from-yellow-500 to-red-500 rounded-full blur-3xl animate-pulse delay-500"></div>
+      {/* Matrix Digital Rain Effect */}
+      <div className="absolute inset-0 opacity-5 pointer-events-none">
+        {[...Array(20)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute animate-pulse text-green-500 text-xs font-mono"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 3}s`,
+              animationDuration: `${2 + Math.random() * 3}s`
+            }}
+          >
+            {Math.random().toString(36).substring(7)}
+          </div>
+        ))}
+      </div>
+
+      {/* 3D Floating Geometric Shapes */}
+      <div className="absolute inset-0 perspective-1000">
+        <div className="absolute top-20 left-20 w-20 h-20 bg-gradient-to-r from-purple-500 to-pink-500 transform rotate-45 animate-spin opacity-20" style={{ animationDuration: '10s' }}></div>
+        <div className="absolute bottom-40 right-30 w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full animate-bounce opacity-30" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/3 right-20 w-12 h-24 bg-gradient-to-r from-yellow-500 to-orange-500 transform skew-x-12 animate-pulse opacity-25"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-28 h-8 bg-gradient-to-r from-green-500 to-teal-500 transform rotate-12 animate-ping opacity-20"></div>
+      </div>
+
+      {/* Holographic Mesh Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-900/10 via-blue-900/10 to-green-900/10 animate-pulse"></div>
+      
+      {/* Liquid Morphing Blobs */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-20 -left-20 w-96 h-96 bg-gradient-radial from-red-500/20 to-transparent rounded-full blur-3xl animate-pulse transform scale-150" style={{ animationDuration: '8s' }}></div>
+        <div className="absolute -bottom-32 -right-32 w-80 h-80 bg-gradient-radial from-blue-500/20 to-transparent rounded-full blur-3xl animate-pulse transform scale-125" style={{ animationDuration: '12s', animationDelay: '3s' }}></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-gradient-radial from-purple-500/20 to-transparent rounded-full blur-3xl animate-pulse" style={{ animationDuration: '15s', animationDelay: '6s' }}></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-7xl mx-auto">
-          {/* Section Header */}
-          <div className="mb-16 animate-fade-in text-center">
-            <h2 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-white via-primary to-white bg-clip-text text-transparent animate-pulse">Portfolio</h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          {/* Magical Section Header */}
+          <div className="mb-16 text-center relative">
+            {/* Floating Sparkles */}
+            <div className="absolute inset-0 pointer-events-none">
+              {[...Array(12)].map((_, i) => (
+                <div
+                  key={i}
+                  className="absolute w-1 h-1 bg-white rounded-full animate-ping"
+                  style={{
+                    left: `${20 + Math.random() * 60}%`,
+                    top: `${20 + Math.random() * 60}%`,
+                    animationDelay: `${Math.random() * 2}s`,
+                    animationDuration: `${1 + Math.random() * 2}s`
+                  }}
+                />
+              ))}
+            </div>
+            
+            <h2 className="text-6xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-white via-primary via-purple-500 via-blue-500 to-white bg-clip-text text-transparent animate-pulse relative">
+              Portfolio
+              {/* Glitch Effect */}
+              <span className="absolute inset-0 bg-gradient-to-r from-red-500 via-green-500 to-blue-500 bg-clip-text text-transparent opacity-0 animate-ping" style={{ animationDuration: '0.1s', animationIterationCount: 'infinite' }}>Portfolio</span>
+            </h2>
+            
+            {/* Morphing Subtitle */}
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto transform hover:scale-105 transition-transform duration-500">
               A showcase of creativity and innovation in every project
             </p>
+            
+            {/* Magical Underline */}
+            <div className="mt-4 mx-auto w-32 h-1 bg-gradient-to-r from-transparent via-primary to-transparent animate-pulse"></div>
           </div>
 
-          {/* Enhanced Masonry Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-max">
+          {/* Mind-Bending 3D Portfolio Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-max perspective-1000">
             {displayedItems.map((item, index) => (
               <div
                 key={item.id}
                 className={`
-                  group relative overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg cursor-pointer
-                  transform transition-all duration-700 hover:scale-105 hover:z-20 hover:rotate-1 hover:shadow-2xl hover:shadow-primary/30
+                  group relative overflow-hidden cursor-pointer
+                  transform-gpu transition-all duration-1000 preserve-3d
+                  hover:scale-110 hover:z-30 hover:rotate-y-12 hover:rotate-x-3
                   ${item.size === 'large' ? 'col-span-2 row-span-2' : ''}
                   ${item.size === 'medium' ? 'row-span-1' : ''}
                   ${item.size === 'small' ? 'row-span-1' : ''}
-                  animate-fade-in border border-gray-700 hover:border-primary/50
+                  animate-fade-in
                 `}
                 style={{
-                  animationDelay: `${index * 0.1}s`
+                  animationDelay: `${index * 0.15}s`,
+                  transformStyle: 'preserve-3d'
                 }}
               >
-                {/* Glowing border effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg"></div>
-                
-                <div className="aspect-square overflow-hidden relative">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-full object-cover transition-all duration-700 group-hover:scale-125 group-hover:rotate-3"
-                  />
+                {/* Holographic Container */}
+                <div className="relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-md rounded-2xl border border-white/10 overflow-hidden group-hover:border-primary/60 transition-all duration-700">
                   
-                  {/* Animated overlay particles */}
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    {[...Array(5)].map((_, i) => (
-                      <div
-                        key={i}
-                        className="absolute w-1 h-1 bg-white rounded-full animate-ping"
-                        style={{
-                          left: `${Math.random() * 100}%`,
-                          top: `${Math.random() * 100}%`,
-                          animationDelay: `${Math.random() * 1}s`
-                        }}
-                      />
-                    ))}
+                  {/* Iridescent Background */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-blue-500/10 to-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                  
+                  {/* Liquid Distortion Effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl animate-pulse"></div>
+                  
+                  {/* Floating Image with Magnetic Effect */}
+                  <div className="aspect-square overflow-hidden relative group-hover:transform group-hover:translateZ-8">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-150 group-hover:rotate-6 filter group-hover:contrast-125 group-hover:saturate-150"
+                    />
+                    
+                    {/* Holographic Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-transparent to-magenta-500/20 opacity-0 group-hover:opacity-70 transition-opacity duration-700 mix-blend-overlay"></div>
+                    
+                    {/* Particle Storm */}
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      {[...Array(15)].map((_, i) => (
+                        <div
+                          key={i}
+                          className="absolute w-0.5 h-0.5 bg-white rounded-full animate-ping"
+                          style={{
+                            left: `${Math.random() * 100}%`,
+                            top: `${Math.random() * 100}%`,
+                            animationDelay: `${Math.random() * 1}s`,
+                            animationDuration: `${0.5 + Math.random() * 1}s`
+                          }}
+                        />
+                      ))}
+                    </div>
+                    
+                    {/* Electric Lines */}
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-60 transition-opacity duration-700">
+                      <svg className="w-full h-full" viewBox="0 0 200 200">
+                        <path
+                          d={`M${Math.random() * 200},${Math.random() * 200} Q${Math.random() * 200},${Math.random() * 200} ${Math.random() * 200},${Math.random() * 200}`}
+                          stroke="currentColor"
+                          strokeWidth="0.5"
+                          fill="none"
+                          className="text-primary animate-pulse"
+                        />
+                      </svg>
+                    </div>
                   </div>
-                </div>
-                
-                {/* Enhanced Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
-                  <div className="text-center transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
-                    <h3 className="text-lg font-semibold mb-2 text-white group-hover:text-primary transition-colors duration-300">{item.title}</h3>
-                    <p className="text-sm text-gray-300 group-hover:text-accent transition-colors duration-300">{item.category}</p>
-                    <div className="mt-3 w-16 h-0.5 bg-gradient-to-r from-primary to-accent mx-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  
+                  {/* Dimensional Text Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-700 flex items-center justify-center">
+                    <div className="text-center transform translate-y-12 rotate-x-45 group-hover:translate-y-0 group-hover:rotate-x-0 transition-all duration-700 preserve-3d">
+                      <h3 className="text-lg font-bold mb-2 text-white group-hover:text-primary transition-colors duration-500 transform group-hover:translateZ-4">{item.title}</h3>
+                      <p className="text-sm text-gray-300 group-hover:text-accent transition-colors duration-500 transform group-hover:translateZ-2">{item.category}</p>
+                      
+                      {/* Neon Underline */}
+                      <div className="mt-3 w-16 h-0.5 bg-gradient-to-r from-primary via-white to-accent mx-auto opacity-0 group-hover:opacity-100 transition-all duration-700 shadow-lg shadow-primary/50"></div>
+                      
+                      {/* Holographic Badge */}
+                      <div className="mt-2 px-3 py-1 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full border border-white/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                        <span className="text-xs text-white">View Project</span>
+                      </div>
+                    </div>
                   </div>
+                  
+                  {/* Corner Glow Effects */}
+                  <div className="absolute top-0 left-0 w-8 h-8 bg-gradient-to-br from-primary to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-700"></div>
+                  <div className="absolute bottom-0 right-0 w-8 h-8 bg-gradient-to-tl from-accent to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-700"></div>
                 </div>
               </div>
             ))}
