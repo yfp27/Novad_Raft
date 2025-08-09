@@ -353,72 +353,99 @@ const Portfolio = () => {
   const displayedItems = showAll ? portfolioItems : portfolioItems.slice(0, 4);
 
   return (
-    <section id="portfolio" className="py-20 bg-black text-white">
-      <div className="container mx-auto px-4">
+    <section id="portfolio" className="py-20 bg-gradient-to-br from-black via-gray-900 to-black text-white relative overflow-hidden">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-20 left-10 w-40 h-40 bg-gradient-to-r from-red-500 to-purple-500 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-32 h-32 bg-gradient-to-r from-blue-500 to-green-500 rounded-full blur-2xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/3 w-48 h-48 bg-gradient-to-r from-yellow-500 to-red-500 rounded-full blur-3xl animate-pulse delay-500"></div>
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
-          <div className="mb-16 animate-fade-in">
-            <h2 className="text-5xl md:text-6xl font-bold mb-4">Portfolio</h2>
+          <div className="mb-16 animate-fade-in text-center">
+            <h2 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-white via-primary to-white bg-clip-text text-transparent animate-pulse">Portfolio</h2>
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+              A showcase of creativity and innovation in every project
+            </p>
           </div>
 
-          {/* Masonry Grid */}
+          {/* Enhanced Masonry Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-max">
             {displayedItems.map((item, index) => (
               <div
                 key={item.id}
                 className={`
-                  group relative overflow-hidden bg-gray-900 rounded-lg cursor-pointer
-                  transform transition-all duration-500 hover:scale-105 hover:z-10
+                  group relative overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg cursor-pointer
+                  transform transition-all duration-700 hover:scale-105 hover:z-20 hover:rotate-1 hover:shadow-2xl hover:shadow-primary/30
                   ${item.size === 'large' ? 'col-span-2 row-span-2' : ''}
                   ${item.size === 'medium' ? 'row-span-1' : ''}
                   ${item.size === 'small' ? 'row-span-1' : ''}
-                  animate-fade-in
+                  animate-fade-in border border-gray-700 hover:border-primary/50
                 `}
                 style={{
                   animationDelay: `${index * 0.1}s`
                 }}
               >
-                <div className="aspect-square overflow-hidden">
+                {/* Glowing border effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg"></div>
+                
+                <div className="aspect-square overflow-hidden relative">
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-all duration-700 group-hover:scale-125 group-hover:rotate-3"
                   />
+                  
+                  {/* Animated overlay particles */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    {[...Array(5)].map((_, i) => (
+                      <div
+                        key={i}
+                        className="absolute w-1 h-1 bg-white rounded-full animate-ping"
+                        style={{
+                          left: `${Math.random() * 100}%`,
+                          top: `${Math.random() * 100}%`,
+                          animationDelay: `${Math.random() * 1}s`
+                        }}
+                      />
+                    ))}
+                  </div>
                 </div>
                 
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div className="text-center transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                    <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                    <p className="text-sm text-gray-300">{item.category}</p>
+                {/* Enhanced Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                  <div className="text-center transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                    <h3 className="text-lg font-semibold mb-2 text-white group-hover:text-primary transition-colors duration-300">{item.title}</h3>
+                    <p className="text-sm text-gray-300 group-hover:text-accent transition-colors duration-300">{item.category}</p>
+                    <div className="mt-3 w-16 h-0.5 bg-gradient-to-r from-primary to-accent mx-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* View More Button */}
+          {/* Enhanced View More Button */}
           {!showAll && portfolioItems.length > 4 && (
             <div className="flex justify-center mt-12">
               <Button 
                 onClick={() => setShowAll(true)}
-                variant="outline"
-                className="px-8 py-3 text-black bg-white border-white hover:bg-red-500 hover:text-white hover:border-red-500 transition-all duration-300"
+                className="px-8 py-4 bg-gradient-to-r from-primary to-accent hover:from-accent hover:to-primary text-white font-semibold rounded-full shadow-2xl hover:shadow-primary/50 transform transition-all duration-300 hover:scale-110 hover:rotate-1 border border-primary/30 hover:border-accent/50"
               >
-                View More
+                View More Magic ✨
               </Button>
             </div>
           )}
 
-          {/* View Less Button */}
+          {/* Enhanced View Less Button */}
           {showAll && (
             <div className="flex justify-center mt-12">
               <Button 
                 onClick={() => setShowAll(false)}
-                variant="outline"
-                className="px-8 py-3 text-black bg-white border-white hover:bg-red-500 hover:text-white hover:border-red-500 transition-all duration-300"
+                className="px-8 py-4 bg-gradient-to-r from-gray-700 to-gray-800 hover:from-primary hover:to-accent text-white font-semibold rounded-full shadow-2xl hover:shadow-primary/50 transform transition-all duration-300 hover:scale-110 hover:rotate-1 border border-gray-600 hover:border-accent/50"
               >
-                View Less
+                Show Less
               </Button>
             </div>
           )}
