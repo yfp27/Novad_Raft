@@ -1,14 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import lucasByrne from '@/assets/lucas-byrne.jpg';
-import nishantVerma from '@/assets/nishant-verma.jpg';
-import poojaRay from '@/assets/pooja-ray.jpg';
-import graceTanaka from '@/assets/grace-tanaka.jpg';
-import roanKeller from '@/assets/roan-keller.jpg';
-import paulDonovan from '@/assets/paul-donovan.jpg';
-import syedRahman from '@/assets/syed-rahman.jpg';
-import mateoCruz from '@/assets/mateo-cruz.jpg';
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -17,50 +9,42 @@ const Testimonials = () => {
     {
       id: 1,
       quote: "Novad nailed our brand identity with incredible precision and imagination. The logo is forever and in-your-head iconic, and the banners brought just the right pizzazz to our launch. A genuine talented and reliable creative partner we believe in",
-      name: "Lucas Byrne",
-      avatar: lucasByrne
+      name: "Lucas Byrne"
     },
     {
       id: 2,
       quote: "Working with Jester was so seamless from start to finish. He created a clean, user-friendly site and developed a logo that perfectly delivered our message. He's savvy, trendy, and always a professional in every sense.",
-      name: "Nishant Verma",
-      avatar: nishantVerma
+      name: "Nishant Verma"
     },
     {
       id: 3,
       quote: "I was completely bogged down with constant website issues and frustrating design gaps. Jester not only remedied all the technical issues in a timely fashion but also modernized our appearance in a consistently cohesive way. He's my guy from now on.",
-      name: "Pooja Ray",
-      avatar: poojaRay
+      name: "Pooja Ray"
     },
     {
       id: 4,
       quote: "Jester brought my entire campaign to life with deep, textured language that jumped out at first sight. Every social media post was clean, bold, and unique. Statistics confirm the crowd definitely noticed and engaged more than ever before.",
-      name: "Grace Tanaka",
-      avatar: graceTanaka
+      name: "Grace Tanaka"
     },
     {
       id: 5,
       quote: "I required graphics that really stood out but had a retro feel, and Jester got the task perfectly. His creative manipulation added real personality and soul to the whole product range, far exceeding my expectations.",
-      name: "Roan Keller",
-      avatar: roanKeller
+      name: "Roan Keller"
     },
     {
       id: 6,
       quote: "Our shop needed more flavor and personality—and Jester delivered. His smart layout and clean typography gave our site an inviting edge, boosting sales within weeks.",
-      name: "Paul Donovan",
-      avatar: paulDonovan
+      name: "Paul Donovan"
     },
     {
       id: 7,
       quote: "Working with APIs is usually a nightmare, but Jester made it a piece of cake to work with ours and integrate our Google review widget and design modifications. He's pleasant to work with, quick to respond, and an excellent team player.",
-      name: "Syed Rahman",
-      avatar: syedRahman
+      name: "Syed Rahman"
     },
     {
       id: 8,
       quote: "I needed a clean user experience and sophisticated branding for my coaching website, and Jester performed impeccably. He wedded great storytelling with performance-oriented design. Clients frequently compliment how professional and engaging the site looks and feels.",
-      name: "Mateo Cruz",
-      avatar: mateoCruz
+      name: "Mateo Cruz"
     }
   ];
 
@@ -232,33 +216,22 @@ const Testimonials = () => {
                   <div className="absolute inset-0 w-48 md:w-64 lg:w-80 h-1 bg-gradient-to-r from-transparent via-cyan-500 to-transparent mx-auto animate-pulse delay-600 blur-lg"></div>
                 </div>
 
-                {/* Levitating Client Avatar */}
+                {/* Client Name Focus */}
                 <div className="flex flex-col items-center">
-                  <div className="relative group">
-                    {/* Magnetic Field Effect */}
-                    <div className="absolute -inset-8 bg-gradient-conic from-primary via-accent to-primary rounded-full blur-2xl opacity-30 animate-spin" style={{ animationDuration: '10s' }}></div>
-                    
-                    {/* Avatar Container */}
-                    <div className="relative w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full overflow-hidden mb-4 ring-4 ring-primary/40 shadow-2xl transform transition-all duration-700 group-hover:scale-110 group-hover:ring-accent/60 animate-float">
-                      <img
-                        src={testimonials[currentIndex].avatar}
-                        alt={testimonials[currentIndex].name}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-125 filter group-hover:contrast-125"
-                      />
-                      {/* Holographic Overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-transparent to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 mix-blend-overlay"></div>
-                    </div>
-                    
-                    {/* Pulsing Energy Rings */}
-                    <div className="absolute inset-0 w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full ring-2 ring-primary/30 animate-ping"></div>
-                    <div className="absolute inset-0 w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full ring-1 ring-accent/20 animate-pulse delay-500"></div>
-                  </div>
-                  
-                  {/* Glowing Name */}
-                  <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-2 bg-gradient-to-r from-white via-primary to-white bg-clip-text text-transparent relative">
+                  {/* Glowing Name with Enhanced Effects */}
+                  <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 bg-gradient-to-r from-white via-primary via-cyan-400 via-purple-500 to-white bg-clip-text text-transparent relative">
                     <span className="relative z-10">{testimonials[currentIndex].name}</span>
                     <span className="absolute inset-0 blur-lg bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent opacity-50">{testimonials[currentIndex].name}</span>
+                    {/* Name Glow Effects */}
+                    <span className="absolute inset-0 bg-gradient-to-r from-red-500 via-green-500 to-blue-500 bg-clip-text text-transparent opacity-0 animate-ping" style={{ animationDuration: '0.2s' }}>{testimonials[currentIndex].name}</span>
                   </h3>
+                  
+                  {/* Energy Signatures under Name */}
+                  <div className="relative mt-4">
+                    <div className="w-48 md:w-64 lg:w-80 h-2 bg-gradient-to-r from-transparent via-primary via-white via-accent to-transparent mx-auto animate-pulse"></div>
+                    <div className="absolute inset-0 w-48 md:w-64 lg:w-80 h-2 bg-gradient-to-r from-transparent via-purple-500 to-transparent mx-auto animate-pulse delay-300 blur-sm"></div>
+                    <div className="absolute inset-0 w-48 md:w-64 lg:w-80 h-2 bg-gradient-to-r from-transparent via-cyan-500 to-transparent mx-auto animate-pulse delay-600 blur-lg"></div>
+                  </div>
                 </div>
               </div>
             </div>
