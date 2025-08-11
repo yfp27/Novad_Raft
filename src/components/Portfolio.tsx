@@ -497,8 +497,8 @@ const Portfolio = () => {
                   {/* Dimensional Text Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-700 flex items-center justify-center">
                     <div className="text-center transform translate-y-12 rotate-x-45 group-hover:translate-y-0 group-hover:rotate-x-0 transition-all duration-700 preserve-3d">
-                      <h3 className="text-lg font-bold mb-2 text-white group-hover:text-primary transition-colors duration-500 transform group-hover:translateZ-4">{item.title}</h3>
-                      <p className="text-sm text-gray-300 group-hover:text-accent transition-colors duration-500 transform group-hover:translateZ-2">{item.category}</p>
+                      <h3 className="text-lg font-bold mb-2 text-white group-hover:text-white transition-colors duration-500 transform group-hover:translateZ-4">{item.title}</h3>
+                      <p className="text-sm text-gray-300 group-hover:text-gray-100 transition-colors duration-500 transform group-hover:translateZ-2">{item.category}</p>
                       
                       {/* Neon Underline */}
                       <div className="mt-3 w-16 h-0.5 bg-gradient-to-r from-primary via-white to-accent mx-auto opacity-0 group-hover:opacity-100 transition-all duration-700 shadow-lg shadow-primary/50"></div>
