@@ -219,11 +219,11 @@ const Testimonials = () => {
                 {/* Client Name Focus */}
                 <div className="flex flex-col items-center">
                   {/* Glowing Name with Enhanced Effects */}
-                  <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 bg-gradient-to-r from-white via-primary via-cyan-400 via-purple-500 to-white bg-clip-text text-transparent relative">
-                    <span className="relative z-10">{testimonials[currentIndex].name}</span>
-                    <span className="absolute inset-0 blur-lg bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent opacity-50">{testimonials[currentIndex].name}</span>
+                  <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 relative">
+                    <span className="relative z-10 text-white drop-shadow-2xl">{testimonials[currentIndex].name}</span>
+                    <span className="absolute inset-0 blur-lg text-primary opacity-50">{testimonials[currentIndex].name}</span>
                     {/* Name Glow Effects */}
-                    <span className="absolute inset-0 bg-gradient-to-r from-red-500 via-green-500 to-blue-500 bg-clip-text text-transparent opacity-0 animate-ping" style={{ animationDuration: '0.2s' }}>{testimonials[currentIndex].name}</span>
+                    <span className="absolute inset-0 text-cyan-400 opacity-0 animate-ping" style={{ animationDuration: '0.2s' }}>{testimonials[currentIndex].name}</span>
                   </h3>
                   
                   {/* Energy Signatures under Name */}
