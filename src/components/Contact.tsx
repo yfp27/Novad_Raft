@@ -115,9 +115,12 @@ const Contact = () => {
                       I'm currently accepting new freelance projects and would love to hear about yours.
                     </p>
                     <Button 
+                      asChild
                       className="bg-white/20 hover:bg-white/30 text-white border border-white/30 hover:border-white/50 transition-all duration-300 hover:scale-105 relative z-10"
                     >
-                      Start Your Project 🚀
+                      <a href="https://calendly.com/jesterbyte337/30min" target="_blank" rel="noopener noreferrer">
+                        Schedule a call📞
+                      </a>
                     </Button>
                   </CardContent>
                 </Card>
