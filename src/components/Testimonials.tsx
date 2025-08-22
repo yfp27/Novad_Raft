@@ -13,37 +13,37 @@ const Testimonials = () => {
     },
     {
       id: 2,
-      quote: "Working with Jester was so seamless from start to finish. He created a clean, user-friendly site and developed a logo that perfectly delivered our message. He's savvy, trendy, and always a professional in every sense.",
+      quote: "Working with Novad was so seamless from start to finish. He created a clean, user-friendly site and developed a logo that perfectly delivered our message. He's savvy, trendy, and always a professional in every sense.",
       name: "Nishant Verma"
     },
     {
       id: 3,
-      quote: "I was completely bogged down with constant website issues and frustrating design gaps. Jester not only remedied all the technical issues in a timely fashion but also modernized our appearance in a consistently cohesive way. He's my guy from now on.",
+      quote: "I was completely bogged down with constant website issues and frustrating design gaps. Novad not only remedied all the technical issues in a timely fashion but also modernized our appearance in a consistently cohesive way. He's my guy from now on.",
       name: "Pooja Ray"
     },
     {
       id: 4,
-      quote: "Jester brought my entire campaign to life with deep, textured language that jumped out at first sight. Every social media post was clean, bold, and unique. Statistics confirm the crowd definitely noticed and engaged more than ever before.",
+      quote: "Novad brought my entire campaign to life with deep, textured language that jumped out at first sight. Every social media post was clean, bold, and unique. Statistics confirm the crowd definitely noticed and engaged more than ever before.",
       name: "Grace Tanaka"
     },
     {
       id: 5,
-      quote: "I required graphics that really stood out but had a retro feel, and Jester got the task perfectly. His creative manipulation added real personality and soul to the whole product range, far exceeding my expectations.",
+      quote: "I required graphics that really stood out but had a retro feel, and Novad got the task perfectly. His creative manipulation added real personality and soul to the whole product range, far exceeding my expectations.",
       name: "Roan Keller"
     },
     {
       id: 6,
-      quote: "Our shop needed more flavor and personality—and Jester delivered. His smart layout and clean typography gave our site an inviting edge, boosting sales within weeks.",
+      quote: "Our shop needed more flavor and personality—and Novad delivered. His smart layout and clean typography gave our site an inviting edge, boosting sales within weeks.",
       name: "Paul Donovan"
     },
     {
       id: 7,
-      quote: "Working with APIs is usually a nightmare, but Jester made it a piece of cake to work with ours and integrate our Google review widget and design modifications. He's pleasant to work with, quick to respond, and an excellent team player.",
+      quote: "Working with APIs is usually a nightmare, but Novad made it a piece of cake to work with ours and integrate our Google review widget and design modifications. He's pleasant to work with, quick to respond, and an excellent team player.",
       name: "Syed Rahman"
     },
     {
       id: 8,
-      quote: "I needed a clean user experience and sophisticated branding for my coaching website, and Jester performed impeccably. He wedded great storytelling with performance-oriented design. Clients frequently compliment how professional and engaging the site looks and feels.",
+      quote: "I needed a clean user experience and sophisticated branding for my coaching website, and Novad performed impeccably. He wedded great storytelling with performance-oriented design. Clients frequently compliment how professional and engaging the site looks and feels.",
       name: "Mateo Cruz"
     }
   ];
